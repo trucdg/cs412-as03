@@ -25,6 +25,4 @@ urlpatterns = [
     # Include the URLs for the 'quotes' app in the main project URL patterns.
     path("quotes/", include("quotes.urls")),
 ]
-
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
